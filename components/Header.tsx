@@ -43,7 +43,7 @@ const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-3 cursor-pointer z-50" onClick={() => onNavigate('home')}>
-            <img src="/logo.avif" alt="Chakras Harmony" className="w-10 h-10 rounded-full object-cover" />
+            <img src="/logo.avif" alt="Chakras Harmony" className="h-12 w-auto object-contain" />
           </div>
 
           {/* Desktop Nav */}
