@@ -101,15 +101,19 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <h4 className="text-[10px] uppercase tracking-[0.3em] font-bold text-chakra-primary border-b border-gray-200 pb-4">
               Localisation
             </h4>
-            <div className="w-full h-64 bg-gray-200 rounded-sm overflow-hidden shadow-inner grayscale">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2551.4886616428464!2d4.3218730999999995!3d50.2443464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2270f2f79029b%3A0x6a0c0e5a88c7f07d!2sRue%20du%20Falin%2020%2C%206500%20Beaumont!5e0!3m2!1sfr!2sbe!4v1700000000000!5m2!1sfr!2sbe" 
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                allowFullScreen={true} 
-                loading="lazy" 
+            <div className="w-full h-64 bg-gray-100 rounded-sm overflow-hidden shadow-inner grayscale relative">
+              <div className="absolute inset-0 flex items-center justify-center text-gray-400 text-sm">
+                <span className="animate-pulse">Chargement de la carte...</span>
+              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2551.4886616428464!2d4.3218730999999995!3d50.2443464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2270f2f79029b%3A0x6a0c0e5a88c7f07d!2sRue%20du%20Falin%2020%2C%206500%20Beaumont!5e0!3m2!1sfr!2sbe!4v1700000000000!5m2!1sfr!2sbe"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
+                className="relative z-10"
               ></iframe>
             </div>
           </div>
