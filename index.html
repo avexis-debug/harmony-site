@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chakras Harmony | Soins Énergétiques Professionnels à Beaumont</title>
+    <meta name="description" content="Cabinet professionnel de soins énergétiques, Reiki et chromathérapie à Beaumont. Expertise et sérénité.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --chakra-primary: #2e1065; /* Retour au Mauve Profond */
+            --chakra-accent: #c5a059;  /* Soft Gold/Champagne */
+            --chakra-bg: #fcfaf7;      /* Warm Ivory */
+            --chakra-text: #1f2937;
+        }
+        .font-serif { font-family: 'Playfair Display', serif; }
+        .font-body { font-family: 'Montserrat', sans-serif; }
+        
+        body { background-color: var(--chakra-bg); color: var(--chakra-text); scroll-behavior: smooth; }
+        
+        .text-chakra-primary { color: var(--chakra-primary); }
+        .bg-chakra-primary { background-color: var(--chakra-primary); }
+        .border-chakra-primary { border-color: var(--chakra-primary); }
+        
+        .text-chakra-accent { color: var(--chakra-accent); }
+        .bg-chakra-accent { background-color: var(--chakra-accent); }
+        
+        .glass-header {
+            background: rgba(252, 250, 247, 0.95);
+            backdrop-filter: blur(12px);
+        }
+        
+        .btn-premium {
+            transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        .btn-premium:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(46, 16, 101, 0.1);
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .animate-fade-up {
+            animation: fadeInUp 1.2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.2.4",
+    "react-dom": "https://esm.sh/react-dom@19.2.4",
+    "react-dom/client": "https://esm.sh/react-dom@19.2.4/client",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="font-body">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
