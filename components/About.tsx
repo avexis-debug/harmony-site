@@ -15,9 +15,9 @@ const About: React.FC<AboutProps> = ({ onNavigate }) => {
           <div className="relative group">
             <div className="absolute -inset-4 border border-chakra-accent/10 rounded-2xl -z-10 transition-transform duration-700 group-hover:scale-105"></div>
             <div className="rounded-2xl overflow-hidden shadow-2xl grayscale-[0.1] aspect-[4/5] lg:aspect-square">
-              <img 
-                src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=1000" 
-                alt="Cheminement spirituel" 
+              <img
+                src="/Mon cheminement.avif"
+                alt="Mon cheminement spirituel"
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
               />
             </div>
