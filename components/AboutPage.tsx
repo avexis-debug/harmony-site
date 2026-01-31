@@ -31,9 +31,9 @@ const AboutPage: React.FC<AboutPageProps> = ({ onBack }) => {
         {/* Section Image d'ambiance */}
         <div className="mb-24 relative">
           <div className="aspect-[21/9] overflow-hidden rounded-2xl shadow-2xl grayscale-[0.1]">
-            <img 
-              src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&q=80&w=2000" 
-              alt="Nature paisible" 
+            <img
+              src="/Mon cheminement.avif"
+              alt="Mon cheminement spirituel"
               className="w-full h-full object-cover"
             />
           </div>
