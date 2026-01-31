@@ -43,7 +43,16 @@ const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-3 cursor-pointer z-50" onClick={() => onNavigate('home')}>
-            <img src="/logo.avif" alt="Chakras Harmony" className="w-10 h-10 rounded-full object-cover" />
+            <img src="/logo.avif" alt="Chakras Harmony" className="w-10 h-10 rounded-full object-cover" onError={(e) => {
+              const target = e.target as HTMLImageElement;
+              target.style.display = 'none';
+              target.nextElementSibling?.classList.remove('hidden');
+            }} />
+            <div className="w-10 h-10 border flex items-center justify-center rounded-full border-chakra-primary hidden">
+              <svg className="w-6 h-6 text-chakra-primary" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1">
+                <path d="M12 3L4 9v12h16V9l-8-6z" />
+              </svg>
+            </div>
             <span className={`font-serif text-xl tracking-tighter uppercase transition-colors text-chakra-primary`}>
               CHAKRAS <span className={`font-light italic text-gray-400`}>Harmony</span>
             </span>
