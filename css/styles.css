@@ -1,0 +1,59 @@
+/* === CSS Custom Properties === */
+:root {
+    --chakra-primary: #2e1065;
+    --chakra-accent: #c5a059;
+    --chakra-bg: #fcfaf7;
+    --chakra-text: #1f2937;
+}
+
+/* === Base === */
+body {
+    background-color: var(--chakra-bg);
+    color: var(--chakra-text);
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: #e0e7ff;
+    color: #312e81;
+}
+
+/* === Font Utility Classes === */
+.font-serif { font-family: 'Playfair Display', serif; }
+.font-body { font-family: 'Montserrat', sans-serif; }
+
+/* === Custom Color Classes === */
+.text-chakra-primary { color: var(--chakra-primary); }
+.bg-chakra-primary { background-color: var(--chakra-primary); }
+.border-chakra-primary { border-color: var(--chakra-primary); }
+.text-chakra-accent { color: var(--chakra-accent); }
+.bg-chakra-accent { background-color: var(--chakra-accent); }
+
+/* === Glass Header === */
+.glass-header {
+    background: rgba(252, 250, 247, 0.95);
+    backdrop-filter: blur(12px);
+}
+
+/* === Premium Button === */
+.btn-premium {
+    transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.btn-premium:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(46, 16, 101, 0.1);
+}
+
+/* === Fade Up Animation === */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-up {
+    animation: fadeInUp 1.2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+/* === Mantra Wheel Spin === */
+.wheel-spin {
+    transition: transform 5s cubic-bezier(0.15, 0, 0.15, 1);
+}
